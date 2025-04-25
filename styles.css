@@ -1,0 +1,99 @@
+/* Reset and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.game-logo img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.search-bar input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 16px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #ff0057;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 12px #ff0057, 0 0 20px #ff0057 inset;
+    transition: 0.4s ease;
+}
+
+.download-btn:hover {
+    background: #ff3366;
+    box-shadow: 0 0 16px #ff0057, 0 0 30px #ff0057 inset;
+    transform: scale(1.05);
+}
